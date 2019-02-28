@@ -20,6 +20,18 @@
 		<description></description>
 		<servlet-class>com.cts.employeemanagementsystem.controller.EmployeeRegistrationServlet</servlet-class>
 	</servlet>
+	<servlet>
+		<servlet-name>EmployeeDeletionServlet</servlet-name>
+		<display-name>EmployeeDeletionServlet</display-name>
+		<description></description>
+		<servlet-class>com.cts.employeemanagementsystem.controller.EmployeeDeletionServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>LogoutServlet</servlet-name>
+		<display-name>LogoutServlet</display-name>
+		<description></description>
+		<servlet-class>com.cts.employeemanagementsystem.controller.LogoutServlet</servlet-class>
+	</servlet>
 	<servlet-mapping>
 		<servlet-name>LoginServlet</servlet-name>
 		<url-pattern>/LoginServlet</url-pattern>
@@ -32,8 +44,18 @@
 		<servlet-name>EmployeeRegistrationServlet</servlet-name>
 		<url-pattern>/EmployeeRegistrationServlet</url-pattern>
 	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>EmployeeDeletionServlet</servlet-name>
+		<url-pattern>/EmployeeDeletionServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>LogoutServlet</servlet-name>
+		<url-pattern>/LogoutServlet</url-pattern>
+	</servlet-mapping>
+	
 	<welcome-file-list>
-		<welcome-file>login.html</welcome-file>
+		<welcome-file>login.jsp</welcome-file>
 		
 	</welcome-file-list>
+	
 </web-app>

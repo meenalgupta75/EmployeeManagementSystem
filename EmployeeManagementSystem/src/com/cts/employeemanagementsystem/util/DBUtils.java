@@ -5,9 +5,9 @@ import java.sql.SQLException;
 
 public class DBUtils {
 	
-	public final static String userName="system";
-	public final static String password="11";
-	public final static String url="jdbc:oracle:thin:@localhost:1521:XE";
+	public final static String userName="meenalg";
+	public final static String password="1";
+	public final static String url="jdbc:oracle:thin:@localhost:1521:xe";
 	public final static String driverName="oracle.jdbc.driver.OracleDriver";
 	
 	public static Connection getConnection(){

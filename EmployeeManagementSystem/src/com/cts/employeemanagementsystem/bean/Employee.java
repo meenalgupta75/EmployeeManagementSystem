@@ -2,6 +2,15 @@ package com.cts.employeemanagementsystem.bean;
 public class Employee {
 
 	private String empID;
+	private static Employee employee;
+	public static Employee getInstance(){
+		if(employee==null){
+			employee=new Employee();
+			return employee;
+		}
+		else
+			return employee;
+	}
 	public Employee(){
 		
 	}
